@@ -4,6 +4,8 @@ Notes from the dev summit
 
 ## Installation
 
+    conda create -n tf2 python=3.6 anaconda
+    conda activate tf2
     pip install -U --pre tensorflow
 
 You can use a conversion script --> tf_upgrade_v2
