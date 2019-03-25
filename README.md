@@ -25,6 +25,10 @@ You can use a conversion script --> tf_upgrade_v2
 
       f(tf.random.uniform([10]))
       
+      print(tf.autograph.to_code(f)) # To display the autographs
+  
+ Functions can be faster than eager code. No need to initialize varaibles manually using **tf.global_variables_initializer**. No need of tf.{cond,while_loop}. you can use while normally. Python doesn't let us overload __if__ like __add__ but autograph does
+      
 * **tf.keras** as the high level API with Eager execution as default
 * Internal ops are accessible in **tf.raw_ops**
 * Escape to backwards compatibility module to use some old function or a deprecated funcntionality
